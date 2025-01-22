@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-interface ProyectoProps {
+interface CardsProps {
   titulo: string;
   descripcion: string;
   tecnologias: string[];
@@ -8,12 +8,12 @@ interface ProyectoProps {
   url?: string;
 }
 
-export const Proyecto: React.FC<ProyectoProps> = ({
+export const Proyecto: React.FC<CardsProps> = ({
   titulo,
   descripcion,
   tecnologias,
   imagen,
-  url
+  url,
 }) => {
   return (
     <article className="proyecto-card">
